@@ -6,10 +6,10 @@
         <strong class="blue-text">Name:&nbsp;Tarun Shekher</strong>
         
         
-        <strong class="blue-text"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Zeal ID: Z0_91</strong>
+        <strong class="blue-text"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zeal ID: Z0_91</strong>
         
         
-        <strong class="blue-text">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admission No:17EE132</strong>
+        <strong class="blue-text">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admission No:17EE132</strong>
         
 
 

@@ -13,6 +13,7 @@
   <link href="/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="{{ asset('css/style.min.css') }}"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <style type="text/css">
     /* width */
     ::-webkit-scrollbar {

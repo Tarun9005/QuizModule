@@ -1,4 +1,4 @@
-@include('cdn')
+@include('layouts.cdn')
 
 <body class="grey lighten-3">
 
@@ -6,14 +6,14 @@
   <header>
 
     
-   @include('nav')
-   @include('sidenav')
+   @include('layouts.nav')
+   @include('layouts.sidenav')
 
  </header>
  <!--Main Navigation-->
  @yield('content')
 
- @include('footer')
+ @include('layouts.footer')
 
   
 </body>
