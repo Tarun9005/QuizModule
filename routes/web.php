@@ -21,3 +21,14 @@ Route::get('/dashboard', function () {
 Route::get('/quiz1', function () {
     return view('question1');
 });
+Route::get('/quiz2', function () {
+    return view('question2');
+});
+
+Route::get('/quiz3', function () {
+    return view('question3');
+});
+
+Route::get('/quiz4', function () {
+    return view('question4');
+});
