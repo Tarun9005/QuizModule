@@ -25,7 +25,7 @@
           <a href="https://twitter.com/MDBootstrap" class="" target="_blank">
             <i class="fab fa-twitter mr-3"></i>
           </a>
-
+ 
           <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
             <i class="fab fa-github mr-3"></i>
           </a>

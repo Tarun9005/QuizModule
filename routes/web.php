@@ -32,3 +32,20 @@ Route::get('/quiz3', function () {
 Route::get('/quiz4', function () {
     return view('question4');
 });
+
+Route::get('/quiz5', function () {
+    return view('question5');
+});
+
+Route::get('/quiz6', function () {
+    return view('question6');
+});
+Route::get('/quiz7', function () {
+    return view('question7');
+});
+Route::get('/quiz8', function () {
+    return view('question8');
+});
+Route::get('/quiz9', function () {
+    return view('question9');
+});
