@@ -49,3 +49,11 @@ Route::get('/quiz8', function () {
 Route::get('/quiz9', function () {
     return view('question9');
 });
+
+Route::get('/game1', function () {
+    return view('game1');
+});
+
+Route::get('/game1validator', function () {
+    return view('game1validator');
+});
