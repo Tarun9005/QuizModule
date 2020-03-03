@@ -55,5 +55,5 @@ Route::get('/game1', function () {
 });
 
 Route::get('/game1validator', function () {
-    return view('game1validator');
+    return view('game1');
 });

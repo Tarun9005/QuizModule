@@ -39,6 +39,8 @@
 
       <form class="mt-3" action="/game1validator" method="GET">
 
+        {{ csrf_field() }}
+
 
         <!-- Email -->
 
@@ -65,6 +67,7 @@
 <script type="text/javascript">
  var m=1,max=4;
  var res=0;
+ let temp;
  function dis() 
  {
   if(m!=max)
@@ -75,6 +78,7 @@
     res=res*10+x; 
     document.getElementById("num0").innerHTML = x;
     setTimeout(function(){document.getElementById("num0").innerHTML = "";},700);
+    // temp=res;
   }
   else
   {
@@ -87,6 +91,7 @@
 
 
 function loadDoc() {
+  console.log(res);
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
