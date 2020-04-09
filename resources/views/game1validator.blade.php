@@ -1,10 +1,14 @@
 <?php
-echo "xxx";
 
- $example2 = $_GET['answer'];
- $example=123;
+
+if(isset($_GET['value']))
+{
+	$example2 = $_GET['value'];
+}
+
+$example=123;
  
  
- echo $example2;
+echo $example;
+
 ?>
-

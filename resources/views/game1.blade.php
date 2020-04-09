@@ -37,17 +37,11 @@
 
       
 
-      <form class="mt-3" action="/game1validator" method="GET">
-
-        {{ csrf_field() }}
-
-
         <!-- Email -->
 
-        <input type="text" class="form-control" name="answer" style="max-width: 20%;" placeholder="Answer">
+        <input type="text" class="form-control" id="answer" style="max-width: 20%;" placeholder="Answer">
 
         <button type="submit" name="submit" class="btn blue-gradient mt-4" onclick="loadDoc()">Submit</button>
-      </form>
 
 
 
@@ -72,7 +66,7 @@
  {
   if(m!=max)
   {
-    console.log(m);
+    //console.log(m);
     document.getElementById('gayab').style.display ="none";
     var x = Math.floor((Math.random() * 9) + 1);      
     res=res*10+x; 
@@ -83,7 +77,7 @@
   else
   {
     clearTimeout(v);
-    console.log(res);
+    //console.log(res);
 
   }
   m++;
@@ -91,13 +85,12 @@
 
 
 function loadDoc() {
-  console.log(res);
+  answer=document.getElementById("answer").value;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
-      console.log(this.responseText);
-      console.log("aa gya hu mai");
+      //console.log(this.responseText);
     }
   };
   xhttp.open("GET", "/game1validator?value="+answer, true);

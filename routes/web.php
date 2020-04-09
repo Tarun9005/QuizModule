@@ -55,5 +55,19 @@ Route::get('/game1', function () {
 });
 
 Route::get('/game1validator', function () {
-    return view('game1');
+    return view('game1validator');
 });
+
+// for registration
+Route::get('/register', 'RegisterController@create');
+Route::post('/register', 'RegisterController@store');
+
+// for login
+Route::get('/login', 'SessionController@create');
+Route::post('/login', 'SessionController@store');
+
+// for logout
+Route::get('/logout','SessionConroller@destroy');
+
+
+
