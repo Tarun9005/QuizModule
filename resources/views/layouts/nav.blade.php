@@ -3,13 +3,22 @@
       <div class="container-fluid">
 
         <!-- Brand -->
-        <strong class="blue-text">Name:&nbsp;Tarun Shekher</strong>
+       
+      @if(Auth::check())
+        <strong class="blue-text">Name:&nbsp;
         
+        {{Auth::user()->uname}}</strong>
+        @endif 
         
-        <strong class="blue-text"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zeal ID: Z0_91</strong>
+          @if(Auth::check())
+        <strong class="blue-text"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Branch:
+        {{Auth::user()->branch}}</strong>
+          @endif 
         
-        
-        <strong class="blue-text">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admission No:17EE132</strong>
+         @if(Auth::check())
+        <strong class="blue-text">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact No:
+        {{Auth::user()->contact}}</strong>
+        @endif
         
 
 

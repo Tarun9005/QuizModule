@@ -52,6 +52,12 @@
           <!-- Default input -->
           <div class="form-group">
             <label for="formGroupExampleInput">Enter your Zeal ID:</label>
+            {{ session()->get( 'id' ) }}
+             {{ session()->get( 'idd' ) }}
+                {{ session()->get( 'idy' ) }}
+                   {{ session()->get( 'idz' ) }}
+                   {{ session()->get( 'idx' ) }}
+                     {{ session()->get( 'idm' ) }}
             <div class="row justify-content-end">
     <div class="col-4">
       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Z0_XX">

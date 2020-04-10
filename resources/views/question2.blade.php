@@ -19,7 +19,7 @@
 
        <div class="row" style="font-family: 'Lato', sans-serif;">
         <div class="col-8">
-         <h4 class="h4 mb-4">Question No-2</h4>
+         <h4 class="h4 mb-4">Question No-5</h4>
        </div>
        <div class="col-4">
         <p id="time" style="font-size: 30px;color: blue;">02:00</p>
@@ -36,12 +36,14 @@
 
         <img src="{{ asset('img/nasa.svg.png') }}" style="max-width: 36%; max-height: 36%;" class="img-fluid" alt="" class="mt-2">
 
-        <form class="mt-3" action="#!">
+        <form class="mt-3" method="POST" action="/quiz2">
+          {{csrf_field()}} 
 
           <p class="h4 mb-4">The given logo is:</p>
 
           <!-- Email -->
-          <input type="email" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer">
+          <input type="text" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer" name="answer2" required>
+           <button type="submit" class="btn blue-gradient mt-4">Submit</button>
         </form>
 
        {{--  <button class="btn blue-gradient mt-4">Blue</button>

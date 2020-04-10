@@ -11,9 +11,9 @@
 	{{csrf_field()}}
 	<label>email</label>
 	<input type="text" name="email">
-	<label>Zeal id</label>
-	<input type="text" name="zealid">
-	<button>Signin</button>
+	<label>PASSWORD</label>
+	<input type="text" name="password">
+	<button type="submit">Signin</button>
 </form>
 </body>
 </html>

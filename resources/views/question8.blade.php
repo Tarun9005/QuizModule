@@ -15,7 +15,7 @@
 
        <div class="row" style="font-family: 'Lato', sans-serif;">
         <div class="col-8">
-         <h4 class="h4 mb-4">Question No-8</h4>
+         <h4 class="h4 mb-4">Question No-3</h4>
        </div>
        <div class="col-4">
         <p id="time" style="font-size: 30px;color: blue;">02:00</p>
@@ -39,17 +39,14 @@
     </div>
     <!-- Grid row -->
 
-       <form class="mt-3" action="#!">
+      <form class="mt-3" method="POST" action="/quiz8">
+          {{csrf_field()}} 
 
 
-         
-          <input type="email" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer">
+          <!-- Email -->
+          <input type="text" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer" name="answer8" required>
+           <button type="submit" class="btn blue-gradient mt-4">Submit</button>
         </form>
- <!-- Grid column -->
-      <button type="button" class="btn blue-gradient mt-4">
-        Next
-      </button>
-
 
   </div>
 </main>

@@ -27,7 +27,7 @@ class RegisterController extends Controller
 			'uname'=>'required',
 			'email'=>'required|email',
 			'branch'=>'required',
-			'zealid'=>'required',
+			'password'=>'required',
 			'contact'=>'required'
 
 
@@ -36,10 +36,10 @@ class RegisterController extends Controller
 
 		// create and save the user
 
-		User::create(request(['uname','email','branch','zealid','contact']));
+		$user=User::create(request(['uname','email','branch','password','contact']));
 
 		// // sign in
-		//  \Auth::login();
+		 auth()->login($user);
 
 		return redirect('/dashboard');
 

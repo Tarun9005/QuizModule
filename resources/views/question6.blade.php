@@ -19,7 +19,7 @@
 
        <div class="row" style="font-family: 'Lato', sans-serif;">
         <div class="col-8">
-         <h4 class="h4 mb-4">Question No-6</h4>
+         <h4 class="h4 mb-4">Question No-1</h4>
        </div>
        <div class="col-4">
         <p id="time" style="font-size: 30px;color: blue;">02:00</p>
@@ -31,11 +31,13 @@
 
         <h4 class="font-weight-normal mt-4" style="font-family: 'Lato', sans-serif;">Can you identify me? I am at the beginning and front of you. Look properly and you will see me in front of you.</h4>
         
-        <form class="mt-3" action="#!">
+        <form class="mt-3" method="POST" action="/quiz6">
+          {{csrf_field()}} 
 
 
           <!-- Email -->
-          <input type="email" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer">
+          <input type="text" id="defaultLoginFormEmail" class="form-control" style="max-width: 20%;" placeholder="Answer" name="answer6" required>
+           <button type="submit" class="btn blue-gradient mt-4">Submit</button>
         </form>
 
        {{--  <button class="btn blue-gradient mt-4">Blue</button>

@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->text('uname');
             $table->text('email');
             $table->text('branch');
-            $table->text('zealid');
+            $table->text('password');
             $table->text('contact');
             $table->timestamps();
         });
