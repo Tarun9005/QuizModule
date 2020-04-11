@@ -14,6 +14,17 @@
 Route::get('/', function () {
     return view('login');
 });
+Route::get('/rules', function () {
+    return view('rules');
+});
+
+Route::get('/table', function () {
+
+    $leaders=App\Leader::all();
+    return view('leaderboard',compact('leaders'));
+});
+
+// rules view
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
@@ -84,6 +95,12 @@ Route::post('/login', 'SessionController@store');
 
 // for logout
 Route::get('/logout','SessionController@destroy');
+
+
+Route::get('/leaderboard', 'RegisterController@spy');
+Route::post('/leaderboard', 'RegisterController@gen');
+
+
 
 
 

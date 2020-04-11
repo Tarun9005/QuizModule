@@ -4,6 +4,7 @@
 
 namespace App\Http\Controllers;
 use App\User;
+use App\Leader;
 
 use Illuminate\Http\Request;
 
@@ -44,4 +45,31 @@ class RegisterController extends Controller
 		return redirect('/dashboard');
 
 	}
+
+	public function spy(){
+		return view('login');
+	}
+
+
+	public function gen(){
+
+
+		$leader=Leader::create(request(['name','score']));
+
+		return redirect('/rules');
+
+
+		// $project=request('var');
+		// $igi=request('dell');
+		// dd($igi,$project);
+
+		// dd($project);
+
+		// dd('{{ session()->get( 'id' ) }}');
+  //            {{ session()->get( 'idd' ) }}
+  //               {{ session()->get( 'idy' ) }}
+  //                  {{ session()->get( 'idz' ) }}
+  //                  {{ session()->get( 'idx' ) }}
+  //                    {{ session()->get( 'idm' ) }}
+}
 }

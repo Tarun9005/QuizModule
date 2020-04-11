@@ -47,7 +47,7 @@ class SessionController extends Controller
         return redirect('/quiz7');
     }
     else{
-     $id=0;
+     $id=5;
      return redirect('/')->with( [ 'id' => $id ] );
 
     }

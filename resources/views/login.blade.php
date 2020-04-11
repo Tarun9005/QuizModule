@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Electrino Quiz</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -29,135 +29,220 @@
 
 
   <!-- Full Page Intro -->
-  <div class="view" style="background-image: url('{{ asset('img/xx.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
+  <div class="view" style="background-image: url('{{ asset('img/result.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
       <!-- Content -->
       <div class="text-center white-text mx-5 wow fadeIn">
-        <h1 class="mb-4">
-          <strong>Welcome to online Quiz:</strong>
+        <h2 class="mb-4">
+          <strong>Thank you for playing the Quiz!:</strong>
+        </h2>
+
+        <h1>
+          <strong>Your score is:</strong>
         </h1>
+{{-- 
+        @if(Auth::check())
+                <strong class="black-text">Name:&nbsp;
 
-        <p>
-          <strong>An interactive quiz from Electrino!!</strong>
-        </p>
+                  {{Auth::user()->uname}}</strong>
+                  @endif 
 
-        <p class="mb-4 d-none d-md-block">
-          <strong>It's an interactive quiz consisting of questions from various sectors like web, electronics and general aptitude.</strong>
-        </p>
+ --}}
+        
+        <?php 
+        $var=session()->get( 'id' );
+        $var2=session()->get( 'idd' );
+        $var3=session()->get( 'idy' );
+        $var4=session()->get( 'idz' );
+        $var5=session()->get( 'idx' );
+        $var6=session()->get( 'idm' );
 
-        <form>
-          <!-- Default input -->
-          <div class="form-group">
-            <label for="formGroupExampleInput">Enter your Zeal ID:</label>
-            {{ session()->get( 'id' ) }}
-             {{ session()->get( 'idd' ) }}
-                {{ session()->get( 'idy' ) }}
-                   {{ session()->get( 'idz' ) }}
-                   {{ session()->get( 'idx' ) }}
-                     {{ session()->get( 'idm' ) }}
-            <div class="row justify-content-end">
-    <div class="col-4">
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Z0_XX">
-    </div>
-    <div class="col-4">
+        ?>
+
+       
+        
+        
       
-    </div>
-  </div>
-            
+        
+       
+
+<?php 
+if ($var==5) 
+{
+  ?>
+ <h2 style="font-family: cursive;"><?php echo $var; ?></h2>
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="batman" value="<?php echo $var?>" name="score" />
+          <input type="text" id="batmann" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+
+
+<?php 
+if ($var2==10) 
+{
+  ?>
+   <h2 style="font-family: cursive;"><?php echo $var2; ?></h2>  
+
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="superman" value="<?php echo $var2?>" name="score" />
+           <input type="text" id="supermann" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+
+<?php 
+if ($var3==20) 
+{
+  ?>
+<h2 style="font-family: cursive;"><?php echo $var3; ?></h2>
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="ironman" value="<?php echo $var3?>" name="score" />
+           <input type="text" id="ironmann" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+
+<?php 
+if ($var4==30) 
+{
+  ?>
+  <h2 style="font-family: cursive;"><?php echo $var4; ?></h2>
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="heman" value="<?php echo $var4?>" name="score" />
+           <input type="text" id="hemann" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+
+<?php 
+if ($var5==40) 
+{
+  ?>
+<h2 style="font-family: cursive;"><?php echo $var5; ?></h2>
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="woman" value="<?php echo $var5?>" name="score" />
+           <input type="text" id="womann" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+
+<?php 
+if ($var6==60) 
+{
+  ?>
+ <h2 style="font-family: cursive;"><?php echo $var6; ?></h2>
+     <form action="/leaderboard" method="POST">
+
+          {{csrf_field()}}
+          <input type="text" id="wonder" value="<?php echo $var6?>" name="score" />
+           <input type="text" id="wonderr" value="<?php echo Auth::user()->uname;?>" name="name" />
+          <br>
+          <button class="btn blue-gradient mt-4 ml-1" type="submit">View Rules for Prize</button>
+        </form>
+
+        <?php
+  }
+  ?>
+ 
+
+   
+
+        <p class="mt-4 d-none d-md-block">
+          <strong>Click the button to see the dasboard and end your quiz!</strong>
+        </p>
+
+
+
+
+            {{-- <form method="POST" action="/leaderboard">
+              <!Default input 
+              <div class="form-group">
+                <label for="formGroupExampleInput">Your score is:</label> --}}
+
+
+
+
+                
+
+
+                </div>
+
+              </div>
+              <!-- Content -->
+
+            </div>
+            <!-- Mask & flexbox options-->
+
           </div>
-        </div>
-        <!-- Content -->
-
-      </div>
-      <!-- Mask & flexbox options-->
-
-    </div>
-    <!-- Full Page Intro -->
+          <!-- Full Page Intro -->
 
 
 
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-      <!--Call to action-->
-      <div class="pt-4">
-        <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank"
-        role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start
-        free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="/js/mdb.min.js"></script>
-  <!-- Initializations -->
   <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-
+    var num=document.getElementById('batman').style.visibility="hidden";
+    var num2=document.getElementById('batmann').style.visibility="hidden";
   </script>
+  <script type="text/javascript">
+    var num=document.getElementById('superman').style.visibility="hidden";
+    var num=document.getElementById('supermann').style.visibility="hidden";
+  </script>
+
+<script type="text/javascript">
+    var num=document.getElementById('heman').style.visibility="hidden";
+     var num=document.getElementById('hemann').style.visibility="hidden";
+  </script>
+<script type="text/javascript">
+    var num=document.getElementById('woman').style.visibility="hidden";
+    var num=document.getElementById('womann').style.visibility="hidden";
+  </script>
+<script type="text/javascript">
+    var num=document.getElementById('wonder').style.visibility="hidden";
+     var num=document.getElementById('wonderr').style.visibility="hidden";
+  </script>
+  <script type="text/javascript">
+    var num=document.getElementById('ironman').style.visibility="hidden";
+      var num=document.getElementById('ironmann').style.visibility="hidden";
+  </script>
+
+
+
+
 </body>
 
 </html>
+
