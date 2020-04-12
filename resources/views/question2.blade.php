@@ -22,7 +22,7 @@
          <h4 class="h4 mb-4">Question No-5</h4>
        </div>
        <div class="col-4">
-        <p id="time" style="font-size: 30px;color: blue;">02:00</p>
+        <p id="countdown" style="font-size: 30px;color: blue;">02:00</p>
       </div>
     </div>
     <div class="row">
@@ -34,7 +34,7 @@
 
 
 
-        <img src="{{ asset('img/nasa.svg.png') }}" style="max-width: 36%; max-height: 36%;" class="img-fluid" alt="" class="mt-2">
+        <img src="{{ asset('img/logo.png') }}" style="max-width: 36%; max-height: 36%;" class="img-fluid" alt="" class="mt-2">
 
         <form class="mt-3" method="POST" action="/quiz2">
           {{csrf_field()}} 
@@ -54,12 +54,10 @@
         <button type="button" class="btn blue-gradient mt-4" data-toggle="modal" data-target="#basicExampleModal">
           Hint 1
         </button>
-        <button type="button" class="btn blue-gradient mt-4" data-toggle="modal" data-target="#basicExampleModal2">
-         Hint 2
-       </button>
+       
 
        <button type="button" class="btn blue-gradient mt-4" data-toggle="modal" data-target="#basicExampleModal3">
-        Hint 3
+        Hint 2
       </button>
 
 
@@ -75,15 +73,17 @@
             </button>
           </div>
           <div class="modal-body">
-            You can see your face fuck
+           It's an american company whose headquater is in Boston.
           </div>
 
         </div>
       </div>
     </div>
     {{-- modal ends --}}
+   
+    {{-- modal ends --}}
      <!-- Modal -->
-      <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -94,26 +94,7 @@
             </button>
           </div>
           <div class="modal-body">
-            Fuck this 2nd hint
-          </div>
-
-        </div>
-      </div>
-    </div>
-    {{-- modal ends --}}
-     <!-- Modal -->
-      <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Hint 3</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Dumb shit no need to play
+            In 2018, it ranked among the Fortune 500 as the 18th-largest firm in the U.S. by gross revenue.
           </div>
 
         </div>
@@ -130,28 +111,26 @@
 </main>
 <!--Main layout-->
 <script type="text/javascript">
-  function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
+    
+    // Total seconds to wait
+    var seconds = 30;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "/table";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
         }
-    }, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 60 * 2,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
+    }
+    
+    // Run countdown function
+    countdown();
+    
 </script>
 @stop
 

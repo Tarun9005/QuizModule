@@ -38,15 +38,26 @@
 
     <h4 class="h4 mb-4">Some basic rules to follow:</h4>
 
-    <p class="font-weight-normal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
-      rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.lorem ipsum lets rock barcelona ar ethe winn ers of championms league.I dont gibve a fuck. lets not fucking figt. Fucking everything stinks. This is shitty and filthy life. Fuck this a I am going to rock . everyone is going to win. Its important to not give a fuck to any single thing in life. FIlthy rooms are sign of engineers Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics</p>
-    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
+    <p class="font-weight-normal">1-You have to answer all the questions for completing the quiz successfully.</p>
+    
+    <p class="font-weight-normal">2-Each correct answer carries 10 marks.</p>
+      <p class="font-weight-normal">3-After your score is displayed you will see the button to see the requirement needed for claiming the prize.</p>
+      <p class="font-weight-normal">4-You can see the dashboard for seeing the position where you stand.All answers has to be typed in small letters even if the answer is numeric.</p>
 
-    @if(Auth::check())
+      <p class="font-weight-normal">5-You must logout after completing the quiz.</p>
+
+      <p class="font-weight-normal">6-You marks are stored only when you complete the entire above process and reach the logout button.</p>
+
+      <p class="font-weight-normal">7-In case of tie decision of the conducting authority will be final.</p>
+
+
+
+    <p class="font-weight-normal">by <a><strong>Tarun Shekher</strong></a>, 12/04/2020</p>
+
+    {{-- @if(Auth::check())
 
     <h2>{{Auth::user()->uname}}</h2>
-    @endif 
+    @endif  --}}
 
     <a href="/quiz6" class="btn blue-gradient">Start</a>
 

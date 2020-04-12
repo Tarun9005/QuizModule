@@ -144,7 +144,7 @@ if ($var4==30)
   ?>
 
 <?php 
-if ($var5==40) 
+if ($var5==50) 
 {
   ?>
 <h2 style="font-family: cursive;"><?php echo $var5; ?></h2>
@@ -162,7 +162,7 @@ if ($var5==40)
   ?>
 
 <?php 
-if ($var6==60) 
+if ($var6==40) 
 {
   ?>
  <h2 style="font-family: cursive;"><?php echo $var6; ?></h2>
@@ -183,7 +183,7 @@ if ($var6==60)
    
 
         <p class="mt-4 d-none d-md-block">
-          <strong>Click the button to see the dasboard and end your quiz!</strong>
+          <strong>Click the button to see the rules for how to claim for the prize!</strong>
         </p>
 
 

@@ -7,17 +7,17 @@
 
   <!-- Social icons -->
   <div class="pb-4">
-    <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+    <a href="https://www.facebook.com/jssseed/" target="_blank">
       <i class="fab fa-facebook-f mr-3"></i>
     </a>
 
 
 
-    <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+    <a href="https://github.com/Tarun9005/" target="_blank">
       <i class="fab fa-github mr-3"></i>
     </a>
 
-    <a href="http://codepen.io/mdbootstrap/" target="_blank">
+    <a href="https://www.instagram.com/electrinoseedjss/" target="_blank">
       <i class="fab fa-instagram mr-3"></i>
     </a>
   </div>
@@ -25,7 +25,7 @@
 
   <!--Copyright-->
   <div class="footer-copyright py-3">
-    © 2019 Copyright:
+    © 2020 Copyright:
     S.E.E.D
   </div>
   <!--/.Copyright-->

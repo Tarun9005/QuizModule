@@ -22,18 +22,18 @@
             <i class="fab fa-facbook-f mr-3"></i>
           </a>
 
-          <a href="https://twitter.com/MDBootstrap" class="" target="_blank">
-            <i class="fab fa-twitter mr-3"></i>
+          <a href="https://www.instagram.com/electrinoseedjss/" class="" target="_blank">
+            <i class="fab fa-instagram mr-3"></i>
           </a>
  
-          <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+          <a href="https://github.com/Tarun9005/" target="_blank">
             <i class="fab fa-github mr-3"></i>
           </a>
-<a href="https://www.facebook.com/mdbootstrap" class="mr-3" target="_blank">
+<a href="https://www.facebook.com/jssseed/" class="mr-3" target="_blank">
             <i class="fab fa-facebook-f mr-1"></i>
           </a>
-          <a href="https://www.facebook.com/mdbootstrap" class="mr-3" target="_blank">
-            <i class="fab fa-facebook-f mr-3"></i>
+          <a href="#" class="mr-3" target="_blank">
+            <i class="fab fa-twitter mr-3"></i>
           </a>
           <br>
           

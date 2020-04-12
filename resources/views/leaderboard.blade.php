@@ -54,8 +54,14 @@
 								
 						</tbody>
 					</table>
+
+
 				</div>
+				<div style="margin-top: 70px; margin-left: 540px;">
+				<button><a href="/logout" style="font-family: cursive;font-size: 50px;color: red;">Logout</a></button>
 			</div>
+			</div>
+
 		</div>
 	</div>
 

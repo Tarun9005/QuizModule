@@ -12,7 +12,7 @@ class SessionController extends Controller
     //
     public function destroy(){
     	auth()->logout();
-    	return redirect('/');
+    	return redirect('/table');
     }
     // public function __construct(){
     //     $this->middleware('guest');
@@ -42,7 +42,7 @@ class SessionController extends Controller
 
     ]);
     $name = request('answer6');
-    if($name=='NASA'){
+    if($name=='yes'){
        
         return redirect('/quiz7');
     }
@@ -63,7 +63,7 @@ public function checkagain(){
 
     ]);
     $name2 = request('answer7');
-        if($name2=='NASA'){
+        if($name2=='javascript'){
 
              return redirect('/quiz8');
 
@@ -85,7 +85,7 @@ public function checkonce(){
 
     ]);
     $name3 = request('answer8');
-        if($name3=='NASA'){
+        if($name3=='two'){
             // $c=$c+10;
             return redirect('/quiz9');
         }
@@ -105,7 +105,7 @@ public function checkdollar(){
 
     ]);
     $name4 = request('answer9');
-         if($name4=='NASA'){
+         if($name4=='infrared'){
 
             // $c=$c+10;
     return redirect('/quiz2');
@@ -129,7 +129,7 @@ public function checkindia(){
 
     ]);
     $name5 = request('answer2');
-        if($name5=='NASA'){
+        if($name5=='generalelectric'){
             // $c=$c+10;
              $idx=50;
             return redirect('/')->with( [ 'idx' => $idx ] );
